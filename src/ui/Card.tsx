@@ -5,7 +5,7 @@ import Image from './Image';
 const StyledCard = styled.div`
   background-color: var(--color-white);
   width: 65%;
-  min-width: 600px;
+  min-width: 650px;
   border-radius: 10px;
   padding: 0.75rem;
   display: flex;
