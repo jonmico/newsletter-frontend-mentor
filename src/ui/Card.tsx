@@ -6,8 +6,9 @@ const StyledCard = styled.div`
   background-color: var(--color-white);
   width: 65%;
   min-width: 650px;
-  border-radius: 10px;
-  padding: 0.75rem;
+  max-width: 900px;
+  border-radius: 20px;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
