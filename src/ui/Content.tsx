@@ -6,10 +6,10 @@ import Button from './Button';
 import Subheader from './Subheader';
 
 const StyledContent = styled.div`
-  padding: 0 2.5rem;
+  padding: 0 4rem 0 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
 `;
 
 export default function Content() {

@@ -6,7 +6,7 @@ const StyledUL = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
 `;
 
 export default function List() {

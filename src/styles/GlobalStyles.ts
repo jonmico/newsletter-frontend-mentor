@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
     --color-dark-slate-grey: hsl(234, 29%, 20%);
     --color-charcoal-grey: hsl(235, 18%, 26%);
     --color-grey: hsl(231, 7%, 60%);
+    --color-grey-light: hsl(231, 7%, 85%);
     --color-white: hsl(0, 0%, 100%);
   }
 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledLI = styled.li`
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
   font-size: 1rem;
 `;
 
