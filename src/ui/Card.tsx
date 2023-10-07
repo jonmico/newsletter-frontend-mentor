@@ -4,9 +4,7 @@ import Image from './Image';
 
 const StyledCard = styled.div`
   background-color: var(--color-white);
-  width: 65%;
-  min-width: 650px;
-  max-width: 900px;
+  width: 900px;
   border-radius: 20px;
   padding: 1.5rem;
   display: flex;

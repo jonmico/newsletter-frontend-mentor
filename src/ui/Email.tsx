@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledEmail = styled.div`
-  padding-top: 1rem;
+  padding-top: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;

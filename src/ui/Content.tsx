@@ -9,7 +9,7 @@ const StyledContent = styled.div`
   padding: 0 4rem 0 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.75rem;
 `;
 
 export default function Content() {

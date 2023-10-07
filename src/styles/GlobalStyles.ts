@@ -22,6 +22,11 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     color: var(--color-charcoal-grey)
   }
+
+  input,
+  button {
+    font-family: 'Roboto', sans-serif;
+  }
 `;
 
 export default GlobalStyles;
