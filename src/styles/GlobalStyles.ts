@@ -21,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Roboto', sans-serif;
     color: var(--color-charcoal-grey);
+    background-color: var(--color-charcoal-grey);
   }
 
   input,
