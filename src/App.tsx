@@ -1,20 +1,24 @@
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import AppLayout from './ui/AppLayout';
+
 import GlobalStyles from './styles/GlobalStyles';
-import styled from 'styled-components';
 
+import Registered from './pages/Registered';
 import Card from './ui/Card';
-
-const StyledApp = styled.div`
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 export default function App() {
   return (
-    <StyledApp>
+    <>
       <GlobalStyles />
-      <Card />
-    </StyledApp>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<AppLayout />}>
+            <Route index element={<Navigate replace to={'app'} />} />
+            <Route path={'app'} element={<Card />} />
+            <Route path={'registered'} element={<Registered />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }

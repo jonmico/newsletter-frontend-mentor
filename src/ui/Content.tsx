@@ -28,7 +28,7 @@ export default function Content() {
       <Subheader />
       <List />
       <Email />
-      <Button />
+      <Button>Subscribe to monthly newsletter</Button>
     </StyledContent>
   );
 }

@@ -20,6 +20,10 @@ const StyledButton = styled.button`
   }
 `;
 
-export default function Button() {
-  return <StyledButton>Subscribe to monthly newsletter</StyledButton>;
+interface ButtonProps {
+  children: React.ReactNode;
+}
+
+export default function Button({ children }: ButtonProps) {
+  return <StyledButton>{children}</StyledButton>;
 }
