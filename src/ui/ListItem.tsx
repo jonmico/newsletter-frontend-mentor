@@ -10,6 +10,12 @@ const StyledLI = styled.li`
     font-size: 0.85rem;
     gap: 0.75rem;
   }
+
+  @media only screen and (max-width: 675px) {
+    font-size: 1rem;
+    gap: 1rem;
+    align-items: flex-start;
+  }
 `;
 
 const StyledImage = styled.img`
@@ -17,6 +23,10 @@ const StyledImage = styled.img`
 
   @media only screen and (max-width: 950px) {
     width: 16px;
+  }
+
+  @media only screen and (max-width: 675px) {
+    width: 20px;
   }
 `;
 

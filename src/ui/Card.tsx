@@ -14,6 +14,14 @@ const StyledCard = styled.div`
   @media only screen and (max-width: 950px) {
     width: 650px;
   }
+
+  @media only screen and (max-width: 675px) {
+    flex-direction: column-reverse;
+    width: 375px;
+    min-width: 375px;
+    padding: 0;
+    border-radius: 0;
+  }
 `;
 
 export default function Card() {

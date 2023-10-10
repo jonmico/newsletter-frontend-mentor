@@ -11,6 +11,10 @@ const StyledUL = styled.ul`
   @media only screen and (max-width: 950px) {
     gap: 0.5rem;
   }
+
+  @media only screen and (max-width: 675px) {
+    gap: 0.75rem;
+  }
 `;
 
 export default function List() {

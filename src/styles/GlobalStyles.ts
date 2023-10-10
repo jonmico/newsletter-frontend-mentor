@@ -20,13 +20,14 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Roboto', sans-serif;
-    color: var(--color-charcoal-grey)
+    color: var(--color-charcoal-grey);
   }
 
   input,
   button {
     font-family: 'Roboto', sans-serif;
   }
+
 `;
 
 export default GlobalStyles;

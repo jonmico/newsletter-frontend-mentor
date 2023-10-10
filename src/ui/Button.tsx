@@ -14,6 +14,10 @@ const StyledButton = styled.button`
   &:hover {
     background-color: var(--color-primary);
   }
+
+  @media only screen and (max-width: 675px) {
+    font-size: 1rem;
+  }
 `;
 
 export default function Button() {

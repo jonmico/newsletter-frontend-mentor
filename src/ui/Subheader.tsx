@@ -7,6 +7,10 @@ const StyledH2 = styled.h2`
   @media only screen and (max-width: 950px) {
     font-size: 0.85rem;
   }
+
+  @media only screen and (max-width: 675px) {
+    font-size: 1rem;
+  }
 `;
 
 export default function Subheader() {

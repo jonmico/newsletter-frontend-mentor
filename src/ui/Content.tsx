@@ -14,6 +14,11 @@ const StyledContent = styled.div`
   @media only screen and (max-width: 950px) {
     gap: 1rem;
   }
+
+  @media only screen and (max-width: 675px) {
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    gap: 1.75rem;
+  }
 `;
 
 export default function Content() {

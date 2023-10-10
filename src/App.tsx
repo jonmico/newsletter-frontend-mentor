@@ -9,6 +9,10 @@ const StyledApp = styled.div`
   align-items: center;
   justify-content: center;
   background-color: var(--color-charcoal-grey);
+
+  @media only screen and (max-width: 675px) {
+    height: auto;
+  }
 `;
 
 export default function App() {

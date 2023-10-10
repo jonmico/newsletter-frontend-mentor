@@ -9,6 +9,10 @@ const StyledEmail = styled.div`
   @media only screen and (max-width: 950px) {
     padding-top: 0.5rem;
   }
+
+  @media only screen and (max-width: 675px) {
+    padding-top: 1.25rem;
+  }
 `;
 
 const Label = styled.label`
@@ -33,6 +37,11 @@ const Input = styled.input`
   &:active,
   &:focus {
     border: 1px solid var(--color-charcoal-grey);
+  }
+
+  @media only screen and (max-width: 675px) {
+    height: 3.5rem;
+    font-size: 1rem;
   }
 `;
 
