@@ -9,12 +9,12 @@ const StyledLI = styled.li`
   @media only screen and (max-width: 950px) {
     font-size: 0.85rem;
     gap: 0.75rem;
+    align-items: flex-start;
   }
 
   @media only screen and (max-width: 675px) {
     font-size: 1rem;
     gap: 1rem;
-    align-items: flex-start;
   }
 `;
 
