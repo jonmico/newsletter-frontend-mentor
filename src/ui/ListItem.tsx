@@ -5,10 +5,19 @@ const StyledLI = styled.li`
   align-items: center;
   gap: 1rem;
   font-size: 1rem;
+
+  @media only screen and (max-width: 950px) {
+    font-size: 0.85rem;
+    gap: 0.75rem;
+  }
 `;
 
 const StyledImage = styled.img`
   width: 18px;
+
+  @media only screen and (max-width: 950px) {
+    width: 16px;
+  }
 `;
 
 interface ListItemProps {

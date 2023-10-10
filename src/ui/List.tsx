@@ -7,6 +7,10 @@ const StyledUL = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+
+  @media only screen and (max-width: 950px) {
+    gap: 0.5rem;
+  }
 `;
 
 export default function List() {

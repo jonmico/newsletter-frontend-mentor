@@ -10,6 +10,10 @@ const StyledCard = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 950px) {
+    width: 650px;
+  }
 `;
 
 export default function Card() {

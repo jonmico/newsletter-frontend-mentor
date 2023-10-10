@@ -5,12 +5,20 @@ const StyledEmail = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+
+  @media only screen and (max-width: 950px) {
+    padding-top: 0.5rem;
+  }
 `;
 
 const Label = styled.label`
   font-weight: 700;
   color: var(--color-dark-slate-grey);
   font-size: 0.85rem;
+
+  @media only screen and (max-width: 950px) {
+    font-size: 0.75rem;
+  }
 `;
 
 const Input = styled.input`

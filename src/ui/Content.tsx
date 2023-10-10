@@ -10,6 +10,10 @@ const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
+
+  @media only screen and (max-width: 950px) {
+    gap: 1rem;
+  }
 `;
 
 export default function Content() {
