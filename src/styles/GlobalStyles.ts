@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
   :root {
     --color-primary: hsl(4, 100%, 67%);
+    --color-primary-light: hsl(4, 100%, 95%);
     --color-dark-slate-grey: hsl(234, 29%, 20%);
     --color-charcoal-grey: hsl(235, 18%, 26%);
     --color-grey: hsl(231, 7%, 60%);
