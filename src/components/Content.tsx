@@ -2,10 +2,8 @@ import styled from 'styled-components';
 import Header from './Header';
 import List from './List';
 import Email from './Email';
-import Button from './Button';
-import Subheader from './Subheader';
 
-import { useNavigate } from 'react-router-dom';
+import Subheader from './Subheader';
 
 const StyledContent = styled.div`
   padding: 0 4rem 0 2rem;
@@ -24,19 +22,12 @@ const StyledContent = styled.div`
 `;
 
 export default function Content() {
-  const navigate = useNavigate();
-
-  function handleClick() {
-    navigate('/registered');
-  }
-
   return (
     <StyledContent>
       <Header />
       <Subheader />
       <List />
       <Email />
-      <Button onClick={handleClick}>Subscribe to monthly newsletter</Button>
     </StyledContent>
   );
 }

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useState } from 'react';
 
 interface IEmailContext {
   email: string;
@@ -32,14 +32,4 @@ function EmailProvider({ children }: EmailProviderProps) {
   );
 }
 
-function useEmail() {
-  const value = useContext(EmailContext);
-
-  if (!value) {
-    throw new Error('EmailContext was used outside the EmailProvider.');
-  }
-
-  return value;
-}
-
-export { EmailProvider, useEmail };
+export { EmailProvider, EmailContext };

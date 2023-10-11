@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Button from '../components/Button';
 import { useNavigate } from 'react-router-dom';
-import { useEmail } from '../contexts/EmailContext';
+import useEmail from '../hooks/useEmail';
 
 const StyledRegistered = styled.div`
   background-color: var(--color-white);

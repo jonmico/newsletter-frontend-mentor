@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import { useEmail } from '../contexts/EmailContext';
+import useEmail from '../hooks/useEmail';
+import Button from './Button';
+import { useNavigate } from 'react-router-dom';
 
 const StyledEmail = styled.form`
   padding-top: 1.25rem;
@@ -32,6 +34,7 @@ const Input = styled.input`
   padding: 1rem 1.25rem;
   border: 1px solid var(--color-grey-light);
   outline: none;
+  margin-bottom: 1.5rem;
   color: var(--color-charcoal-grey);
   cursor: pointer;
 
@@ -48,9 +51,15 @@ const Input = styled.input`
 
 export default function Email() {
   const { email, handleChangeEmail } = useEmail();
+  const navigate = useNavigate();
+
+  function handleSubmit(evt: React.FormEvent<HTMLFormElement>) {
+    evt.preventDefault();
+    navigate('/registered');
+  }
 
   return (
-    <StyledEmail>
+    <StyledEmail onSubmit={handleSubmit}>
       <Label htmlFor='email'>Email address</Label>
       <Input
         type='email'
@@ -58,6 +67,7 @@ export default function Email() {
         onChange={handleChangeEmail}
         placeholder={'email@company.com'}
       />
+      <Button>Subscribe to monthly newsletter</Button>
     </StyledEmail>
   );
 }
