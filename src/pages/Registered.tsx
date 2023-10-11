@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Button from '../ui/Button';
+import Button from '../components/Button';
 
 const StyledRegistered = styled.div`
   background-color: var(--color-white);

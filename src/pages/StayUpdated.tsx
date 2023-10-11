@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import Content from './Content';
-import Image from './Image';
+import Content from '../components/Content';
+import Image from '../components/Image';
 
-const StyledCard = styled.div`
+const StyledStayUpdated = styled.div`
   background-color: var(--color-white);
   width: 900px;
   border-radius: 20px;
@@ -24,11 +24,11 @@ const StyledCard = styled.div`
   }
 `;
 
-export default function Card() {
+export default function StayUpdated() {
   return (
-    <StyledCard>
+    <StyledStayUpdated>
       <Content />
       <Image />
-    </StyledCard>
+    </StyledStayUpdated>
   );
 }

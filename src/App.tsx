@@ -1,10 +1,10 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import AppLayout from './ui/AppLayout';
+import AppLayout from './components/AppLayout';
 
 import GlobalStyles from './styles/GlobalStyles';
 
 import Registered from './pages/Registered';
-import Card from './ui/Card';
+import Card from './pages/StayUpdated';
 
 export default function App() {
   return (
