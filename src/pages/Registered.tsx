@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import Button from '../components/Button';
+import { useNavigate } from 'react-router-dom';
+import { useEmail } from '../contexts/EmailContext';
 
 const StyledRegistered = styled.div`
   background-color: var(--color-white);
@@ -26,16 +28,23 @@ const Paragraph = styled.p`
 `;
 
 export default function Registered() {
+  const navigate = useNavigate();
+  const { email, handleClearEmail } = useEmail();
+
+  function handleClick() {
+    handleClearEmail();
+    navigate('/app');
+  }
+
   return (
     <StyledRegistered>
       <Image src={'icon-success.svg'} alt={'Success Icon'} />
       <Header>Thanks for subscribing!</Header>
       <Paragraph>
-        A confirmation email has been sent to{' '}
-        <strong>ash@loremcompany.com</strong>. Please open it and click the
-        button inside to confirm your subscription.
+        A confirmation email has been sent to <strong>{email}</strong>. Please
+        open it and click the button inside to confirm your subscription.
       </Paragraph>
-      <Button>Dismiss message</Button>
+      <Button onClick={handleClick}>Dismiss message</Button>
     </StyledRegistered>
   );
 }

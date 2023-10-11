@@ -3,6 +3,7 @@ import { createContext, useContext, useState } from 'react';
 interface IEmailContext {
   email: string;
   handleChangeEmail: (evt: React.ChangeEvent<HTMLInputElement>) => void;
+  handleClearEmail: () => void;
 }
 
 const EmailContext = createContext<IEmailContext | null>(null);
@@ -18,8 +19,14 @@ function EmailProvider({ children }: EmailProviderProps) {
     setEmail(evt.target.value);
   }
 
+  function handleClearEmail() {
+    setEmail('');
+  }
+
   return (
-    <EmailContext.Provider value={{ email, handleChangeEmail }}>
+    <EmailContext.Provider
+      value={{ email, handleChangeEmail, handleClearEmail }}
+    >
       {children}
     </EmailContext.Provider>
   );

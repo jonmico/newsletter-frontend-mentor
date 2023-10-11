@@ -5,6 +5,8 @@ import Email from './Email';
 import Button from './Button';
 import Subheader from './Subheader';
 
+import { useNavigate } from 'react-router-dom';
+
 const StyledContent = styled.div`
   padding: 0 4rem 0 2rem;
   display: flex;
@@ -22,13 +24,19 @@ const StyledContent = styled.div`
 `;
 
 export default function Content() {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate('/registered');
+  }
+
   return (
     <StyledContent>
       <Header />
       <Subheader />
       <List />
       <Email />
-      <Button>Subscribe to monthly newsletter</Button>
+      <Button onClick={handleClick}>Subscribe to monthly newsletter</Button>
     </StyledContent>
   );
 }

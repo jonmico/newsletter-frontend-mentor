@@ -24,11 +24,7 @@ const StyledStayUpdated = styled.div`
   }
 `;
 
-interface StayUpdatedProps {
-  handleChangeEmail: (evt: React.ChangeEvent<HTMLInputElement>) => void;
-}
-
-export default function StayUpdated({ handleChangeEmail }: StayUpdatedProps) {
+export default function StayUpdated() {
   return (
     <StyledStayUpdated>
       <Content />

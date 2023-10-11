@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { useEmail } from '../contexts/EmailContext';
 
-const StyledEmail = styled.div`
+const StyledEmail = styled.form`
   padding-top: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -46,10 +47,17 @@ const Input = styled.input`
 `;
 
 export default function Email() {
+  const { email, handleChangeEmail } = useEmail();
+
   return (
     <StyledEmail>
       <Label htmlFor='email'>Email address</Label>
-      <Input type='email' placeholder={'email@company.com'} />
+      <Input
+        type='email'
+        value={email}
+        onChange={handleChangeEmail}
+        placeholder={'email@company.com'}
+      />
     </StyledEmail>
   );
 }
